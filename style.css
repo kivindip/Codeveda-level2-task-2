@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #f8e1ff, #ffd6e8);
+}
+
+/* APP CONTAINER */
+.app {
+  width: 90vw;
+  height: 90vh;
+  margin: 3vh auto;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: #7b4bc4;
+}
+
+/* INPUT */
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #e7c6ff;
+  border-radius: 10px;
+  flex: 1;
+}
+
+button {
+  background: #c77dff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  height: 15px;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c77dff, #ff6b9a);
+}
+
+/* TEXT */
+#progressText {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* CHART */
+#chartBox {
+  margin: 10px 0;
+}
+
+/* TASK LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+li {
+  background: #f8f0ff;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.del {
+  background: #ff6b9a;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+/* ========================= */
+/*mobile*/
+/* ========================= */
+@media (max-width: 600px) {
+
+  .app {
+    width: 95vw;
+    height: 95vh;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #progressText {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================= */
+/* 📟 TABLET */
+/* ========================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .app {
+    width: 92vw;
+    height: 92vh;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .input-section {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .app {
+    width: 92vw;
+    height: 92vh;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .input-section {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================= */
+/*  LAPTOP / DESKTOP */
+/* ========================= */
+@media (min-width: 1025px) {
+
+  .app {
+    width: 80vw;
+    height: 85vh;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
